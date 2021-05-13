@@ -1,0 +1,44 @@
+POST http://localhost:3000/mt/cat/10085676/221354886
+Content-Type: application/json
+
+{
+  "name": "┏ 🌈 ┓新品尝鲜",
+  "description": "",
+  "top_flag": 1,
+  "tag_type": 0,
+  "time_zone": {
+    "1": [{ "start": "00:00", "end": "23:59", "time": "00:00-23:59" }],
+    "2": [{ "start": "00:00", "end": "23:59", "time": "00:00-23:59" }]
+  },
+  "sequence": 3
+}
+
+###
+GET http://localhost:3000/mt/shops?isOpen=3&keyWord=贡茶
+
+###
+GET http://localhost:3000/mt/spus/10085676?tagId=178984089&opType=8
+
+@base = http://localhost:3000/
+
+###
+GET {{base}}mt/acts/7882136/100?status=1
+
+###
+POST {{base}}mt/acts/100/7882136/下单返券
+
+{
+  "limitPrice": 39,
+  "couponPrice": 2,
+  "fullPrice": 2
+}
+
+###
+DELETE {{base}}mt/act/7882136/100/157679540
+
+###
+POST http://localhost:3001/mt/dx
+
+{
+  "base64": "AAAAfgADAAUAAAAAAAAAAAAAbPttdAAkYTczOWY3N2QtMTEyYy00MDJiLWFiYmQtNjQzYzFmOTE0NTQ3AAh7Im9zIjozfQAgemV6Z29qZ3Fic2xsaWF4aGpycGNpYnFmeHhodnprbGYAAgADAAAD6QAHAAAD6WBtJCec6Hq4"
+}

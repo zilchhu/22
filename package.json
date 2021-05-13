@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "name": "22",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "farrow": "^1.8.7",
+    "farrow-http": "^1.8.7",
+    "farrow-pipeline": "^1.8.0",
+    "farrow-schema": "^1.8.0",
+    "sleep-promise": "^9.1.0"
+  }
+}
